@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "X Feed Personalizer",
+    "version": "1.0",
+    "description": "Personalize your X feed by liking posts based on a specified keyword.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://twitter.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "hello_extensions copy.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
