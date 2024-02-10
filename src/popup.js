@@ -7,6 +7,7 @@ document.getElementById('keywordForm').addEventListener('submit', function(event
     // Sends message to background script with keyword
     chrome.runtime.sendMessage({ keyword: keyword }, function(response) {
         console.log('Keyword sent to background: ' , keyword);
-        // can handle response from background script here
+        //handle response from background script
+        console.log('Response received from background: ', response.result);
     });
 });
