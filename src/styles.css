@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 500px; /* Ensures the body takes the full width of the popup */
+    height: 100%; /* Ensures the body takes the full height of the popup */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: block;
+    margin: auto; /* Or whatever width you prefer */
+}
+
+input[type="text"], input[type="submit"] {
+    width: 100%; /* Makes the input take the full width of its container */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    /* Other styles... */
+}
+
