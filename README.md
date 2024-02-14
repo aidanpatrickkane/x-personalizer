@@ -1,3 +1,4 @@
 # ugahacks9
 
-Not sure what i'm gonna do yet.
+Input a keyword into browser extension, it then goes and likes the frist 20 posts with comments including that keyword.
+Hopefully this makes your feed more personalized.
